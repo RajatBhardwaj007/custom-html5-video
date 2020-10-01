@@ -254,15 +254,22 @@ function keyboardShortcuts(event) {
 }
 
 // Add eventlisteners here
+//Event listener for toggleplay
 playButton.addEventListener('click', togglePlay);
+//Event listener for update play button
 video.addEventListener('play', updatePlayButton);
+//Event listener for update pause button
 video.addEventListener('pause', updatePlayButton);
+//Event listener for initialzing video
 video.addEventListener('loadedmetadata', initializeVideo);
+//Event listener for update time elapsed
 video.addEventListener('timeupdate', updateTimeElapsed);
 video.addEventListener('timeupdate', updateProgress);
+//Event listener for updating volume icon
 video.addEventListener('volumechange', updateVolumeIcon);
 video.addEventListener('click', togglePlay);
 video.addEventListener('click', animatePlayback);
+//Event listener for controls
 video.addEventListener('mouseenter', showControls);
 video.addEventListener('mouseleave', hideControls);
 videoControls.addEventListener('mouseenter', showControls);
